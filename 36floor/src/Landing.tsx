@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './Landing.css'
 import LandingHeader from './components/LandingHeader.jsx'
+import DrawerIcon from './components/DrawerIcon.jsx'
+import LandingBackground from './components/LandingBackground.jsx'
 
 function Landing() {
   const [count, setCount] = useState(0)
@@ -10,6 +12,8 @@ function Landing() {
   return (
     <>
     <LandingHeader />
+    <DrawerIcon />
+    <LandingBackground />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

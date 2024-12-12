@@ -1,15 +1,15 @@
 import { useState } from 'react'
 
-function LandingHeader() {
+function BandsInTownWidget() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <p className="read-the-docs">
-        This is the landing header!
+        This is the BandsInTownWidget!
       </p>
     </>
   )
 }
 
-export default LandingHeader
+export default BandsInTownWidget
