@@ -11,10 +11,10 @@ function LandingHeader() {
 
   return (
     <>
-        <Flex w="50%" justify="center" align="center" textAlign="center" align-items="center" direction="column">
+        <Flex w="100%" justify="center" align="center" textAlign="center" align-items="center" direction="column">
           <Image src={the36floor}></Image>
         </Flex>
-        <Flex w="100%" textAlign="center">
+        <Flex w="100%" textAlign="center" direction="column">
           <Text color="black" >shaking up the underground</Text>
         </Flex>
     </>
