@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import './LandingBackground.css'
 
 function LandingBackground() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <p className="read-the-docs">
+      <p className="background">
         This is the landing background!
       </p>
     </>
