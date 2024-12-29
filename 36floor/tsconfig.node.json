@@ -1,24 +1,14 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "target": "ES2022", // Use a more common target for frontend (e.g., ES2022 or ES6)
+    "lib": ["ES2023", "dom"], // Add "dom" to include web APIs for the frontend
+    "module": "ESNext", // Use modern module system (ES Modules)
+    "moduleResolution": "node", // Resolve modules like Node.js
+    "esModuleInterop": true, // Allow default imports from CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files for performance
+    "strict": true, // Enforce strict type-checking options
+    "noEmit": true, // We don't need to emit JavaScript files for this configuration
+    "jsx": "react" // Enable JSX support for React
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "src/**/*"] // Include src files for frontend code as well
 }
