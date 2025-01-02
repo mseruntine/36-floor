@@ -14,7 +14,7 @@ function LandingHeader() {
     <>
         <Box w="100%" h="100%">
           <Flex w="100%" justify="center" align="center" textAlign="center" align-items="center" direction="column">
-            <Flex w="50%">
+            <Flex w="50%" padding={"4%"}>
               <Image src={the36floor}></Image>
             </Flex>
             <Flex w="50%">
@@ -23,7 +23,7 @@ function LandingHeader() {
           </Flex>
           <Flex textAlign="center" >
               <Flex h={40} w={"100%"} direction="column" alignItems="center" justifyContent="space-evenly">
-                <Text color="black" fontWeight={"semibold"} textStyle={"2xl"} >shaking up the underground</Text>
+                <Text color="black" fontWeight={"bold"} textStyle={"2xl"} >shaking up the underground</Text>
                 <Text color="black" fontWeight={"bold"} textStyle={"3xl"} >New Orleans | Houston</Text>
               </Flex>
           </Flex>

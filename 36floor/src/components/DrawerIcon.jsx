@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from '@chakra-ui/react';
 import './styles/DrawerIcon.css'
 
 function DrawerIcon() {
@@ -33,10 +34,15 @@ function DrawerIcon() {
       {/* Sliding Menu */}
       <div className={`drawer ${isOpen ? 'open' : ''}`}>
         <div className="drawer-content">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+        <Link href="#home" display="block" padding="8px 0" fontSize="16px" _hover={{ color: 'blue.500' }}>
+            Home
+          </Link>
+          <Link href="#about" display="block" padding="8px 0" fontSize="16px" _hover={{ color: 'blue.500' }}>
+            Shows
+          </Link>
+          <Link href="#contact" display="block" padding="8px 0" fontSize="16px" _hover={{ color: 'blue.500' }}>
+            Contact
+          </Link>
         </div>
       </div>
 
