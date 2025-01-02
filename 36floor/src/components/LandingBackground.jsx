@@ -11,7 +11,7 @@ function LandingBackground() {
   // Load random images on component mount
   useEffect(() => {
     const randomImages = [];
-    for (let i = 0; i < 16; i++) {  // For 4 columns and 4 rows, total of 16 images
+    for (let i = 0; i < 20; i++) {  // For 4 columns and 4 rows, total of 16 images
       const randomIndex = Math.floor(Math.random() * totalImages) + 1; // Random index (assumes images are named 1.jpg, 2.jpg, etc.)
       randomImages.push(`${imageFolder}${randomIndex}.JPG`);
     }
