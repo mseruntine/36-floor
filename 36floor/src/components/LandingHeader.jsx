@@ -13,7 +13,7 @@ function LandingHeader() {
   return (
     <>
         <Box w="100%" h="100%">
-          <Flex w="100%" justify="center" align="center" textAlign="center" align-items="center" direction="row">
+          <Flex w="100%" justify="center" align="center" textAlign="center" align-items="center" direction="column">
             <Flex w="50%">
               <Image src={the36floor}></Image>
             </Flex>

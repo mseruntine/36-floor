@@ -1,74 +1,106 @@
 /* Basic Reset */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  /* Hamburger Button */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+  position: fixed;
+  padding: 16px;
+  top: 16px;
+  right: 16px;
+  z-index: 1001;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Optional animation */
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: give it a subtle shadow */
+  background-color: black; /* Optional: add a background for contrast */
+  color: white;
+}
+
+.hamburger-btn:hover {
+  transform: scale(1.1); /* Subtle hover effect */
+}
+
+@media (max-width: 768px) { 
   .hamburger-btn {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    z-index: 1001;
+    z-index: 9999; /* Ensure it's the topmost element on small screens */
+    color: white;
   }
-  
-  /* Drawer Styles */
-  .drawer {
-    position: fixed;
-    top: 0;
-    right: -300px; /* Hidden by default */
-    width: 300px;
-    height: 100%;
-    background-color: white;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    overflow-y: auto;
-    z-index: 1002;
-    transition: right 0.3s ease; /* Smooth sliding effect */
-  }
-  
-  .drawer.open {
-    right: 0; /* Slide in */
-  }
-  
-  /* Close Button */
-  .close-btn {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-  }
-  
-  /* Drawer Content */
-  .drawer-content {
-    padding: 16px;
-  }
-  
-  .drawer-content a {
-    display: block;
-    margin: 8px 0;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    transition: color 0.2s;
-  }
-  
-  .drawer-content a:hover {
-    color: #007BFF;
-  }
-  
-  /* Backdrop */
-  .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-  }
+}
+
+/* Drawer Styles */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hidden offscreen by default */
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: right 0.3s ease; /* Smooth sliding effect */
+}
+
+.drawer.open {
+  right: 0; /* Visible when open */
+}
+
+/* Drawer Content */
+.drawer-content {
+  display: none; /* Hidden by default */
+}
+
+.drawer.open .drawer-content {
+  display: block; /* Visible when drawer is open */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* Drawer Content Links */
+.drawer-content a {
+  display: flex;
+  margin: 8px 0;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.drawer-content a:hover {
+  color: #007BFF;
+}
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none; /* Hidden by default */
+}
+
+.drawer.open + .backdrop {
+  display: block; /* Show backdrop only when drawer is open */
+}
