@@ -1,0 +1,5 @@
+svg {
+  fill: black !important; /* Ensure SVG icons are colored */
+  width: 24px; /* Adjust size */
+  height: 24px;
+}

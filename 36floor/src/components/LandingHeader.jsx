@@ -3,6 +3,7 @@ import the36floor from '../assets/the36floor.JPG';
 import reactLogo from '../assets/react.svg';
 import './styles/LandingHeader.css'
 import DrawerIcon from './DrawerIcon.jsx'
+import Socials from './Socials.jsx'
 import { Box, Flex, Text, Image } from "@chakra-ui/react"
 
 function LandingHeader() {
@@ -20,6 +21,9 @@ function LandingHeader() {
             <Flex w="50%">
               <DrawerIcon />
             </Flex>
+          </Flex>
+          <Flex justifyContent={"center"}>
+            <Socials />
           </Flex>
           <Flex textAlign="center" >
               <Flex h={40} w={"100%"} direction="column" alignItems="center" justifyContent="space-evenly">
