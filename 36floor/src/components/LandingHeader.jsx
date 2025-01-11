@@ -14,11 +14,11 @@ function LandingHeader() {
     <>
         <Box w="100%" h="100%">
           <Flex w="100%" justify="center" align="center" textAlign="center" align-items="center" direction="column">
-            <Flex w="50%" padding={"4%"}>
+            <Flex w="40%" paddingTop={"7%"}>
               <Image src={the36floor}></Image>
             </Flex>
             <Flex w="50%">
-              <DrawerIcon/>
+              <DrawerIcon />
             </Flex>
           </Flex>
           <Flex textAlign="center" >

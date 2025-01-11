@@ -15,6 +15,7 @@ button {
 .hamburger-btn {
   position: fixed;
   padding: 16px;
+  margin: 10px;
   top: 16px;
   right: 16px;
   z-index: 1001;
