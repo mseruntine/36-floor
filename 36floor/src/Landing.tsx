@@ -40,7 +40,7 @@ function Landing() {
         <div ref={homeRef}>
           <LandingHeader />
         </div>
-        <LandingBackground />
+        <LandingBackground/>
         {/* Add a reference to the BandsInTownWidget */}
         <div ref={bandsInTownRef}>
           <BandsInTownWidget />

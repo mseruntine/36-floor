@@ -13,9 +13,9 @@ function LandingHeader() {
 
   return (
     <>
-        <Box w="100%" h="100%">
+        <Box w={{md: "100%", xl: "1200px"}} h="100%">
           <Flex w="100%" justify="center" align="center" textAlign="center" align-items="center" direction="column">
-            <Flex w="40%" paddingTop={"7%"}>
+            <Flex w="40%" paddingTop={"3%"}>
               <Image src={the36floor}></Image>
             </Flex>
             <Flex w="50%">
