@@ -1,6 +1,6 @@
 import React from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import { Box, Flex, Text, Image } from "@chakra-ui/react"
+import { useForm } from 'react-hook-form';
+import { Box, Flex, Text } from "@chakra-ui/react"
 
 // Define the expected structure of form data
 interface IFormInput {
