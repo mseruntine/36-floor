@@ -8,7 +8,7 @@ function Socials() {
 
   return (
     <>
-      <HStack spacing={4} display="flex" justifyContent="center" marginTop={8}>
+      <HStack spacing={4} display="flex" justifyContent="center" marginTop={0}>
         <Link href="https://www.tiktok.com/@36floor" isExternal>
           <FaTiktok color="black" size={30} />
         </Link>

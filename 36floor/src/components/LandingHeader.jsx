@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import the36floor from '../assets/the36floor.JPG';
+import the36floor from '../assets/the36floorWhite.jpg';
 import reactLogo from '../assets/react.svg';
 import './styles/LandingHeader.css'
 import DrawerIcon from './DrawerIcon.jsx'

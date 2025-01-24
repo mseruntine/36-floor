@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
       <Flex paddingTop={0}>
         
         <div style={{ marginBottom: '1rem' }}>
-          <Flex alignItems={"center"}>
+          <Flex w={196} alignItems={"center"}>
             <input
               {...register('name', { required: 'Name is required' })}
               id="name"
@@ -59,7 +59,7 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div style={{ marginBottom: '1rem' }}>
-          <Flex alignItems={"center"}>
+          <Flex w={196} alignItems={"center"}>
           <input
             {...register('email', { required: 'Email is required', pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i, message: 'Invalid email address' } })}
             id="email"
