@@ -27,7 +27,7 @@ function LandingHeader() {
           </Flex>
           <Flex textAlign="center" >
               <Flex h={40} w={"100%"} direction="column" alignItems="center" justifyContent="space-evenly">
-                <Text color="black" fontWeight={"bold"} textStyle={"2xl"} >shaking up the underground</Text>
+                <Text color="black" fontWeight={"bold"} textStyle={"2xl"} >Underground</Text>
                 <Text color="black" fontWeight={"bold"} textStyle={"3xl"} >New Orleans | Houston</Text>
               </Flex>
           </Flex>
