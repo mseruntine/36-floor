@@ -3,7 +3,7 @@ import './styles/LandingBackground.css'
 import { Image } from "@chakra-ui/react";
 
 const imageFolder = '/assets/homepageCollage/'; // Corrected to public directory path
-const totalImages = 41; // Total number of images in the folder, adjust based on your actual number of images
+const totalImages = 42; // Total number of images in the folder, adjust based on your actual number of images
 
 function LandingBackground() {
   const [images, setImages] = useState([]);
