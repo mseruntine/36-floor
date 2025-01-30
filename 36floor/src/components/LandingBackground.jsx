@@ -13,7 +13,7 @@ function LandingBackground() {
     const randomImages = [];
     for (let i = 0; i < 20; i++) {  // For 4 columns and 4 rows, total of 16 images
       const randomIndex = Math.floor(Math.random() * totalImages) + 1; // Random index (assumes images are named 1.jpg, 2.jpg, etc.)
-      randomImages.push(`${imageFolder}${randomIndex}.JPG`);
+      randomImages.push(`${imageFolder}${randomIndex}.jpg`);
     }
     setImages(randomImages);
   }, []);
